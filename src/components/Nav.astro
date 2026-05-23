@@ -1,0 +1,14 @@
+---
+import { person } from '../data/content';
+---
+
+<nav class="flex justify-between items-center px-8 py-6 border-b border-glow sticky top-0 bg-bg-primary/90 backdrop-blur-md z-10">
+  <span class="font-display font-extrabold text-lg tracking-tight text-text-primary">
+    {person.initials}<span class="text-accent-purple">.</span>
+  </span>
+  <div class="flex gap-8">
+    <a href="#work"    class="text-text-muted hover:text-accent-teal text-xs tracking-widest uppercase transition-colors">Work</a>
+    <a href="#about"   class="text-text-muted hover:text-accent-teal text-xs tracking-widest uppercase transition-colors">About</a>
+    <a href="#contact" class="text-text-muted hover:text-accent-teal text-xs tracking-widest uppercase transition-colors">Contact</a>
+  </div>
+</nav>

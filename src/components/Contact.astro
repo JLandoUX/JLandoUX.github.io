@@ -1,0 +1,22 @@
+---
+import { person } from '../data/content';
+---
+
+<section id="contact" class="px-8 py-16 border-t border-glow bg-bg-surface text-center">
+  <div class="max-w-4xl mx-auto">
+    <p class="text-xs tracking-widest uppercase text-accent-purple mb-2">Contact</p>
+    <h2 class="font-display font-bold text-3xl tracking-tight mb-4">Let's work together</h2>
+    <p class="text-sm text-text-muted leading-loose max-w-md mx-auto mb-8">
+      Whether you're building a new product, scaling a design team, or rethinking your design system — I'd love to hear about it.
+    </p>
+    <a href={`mailto:${person.email}`}
+       class="font-display font-bold text-2xl text-accent-purple border-b border-transparent hover:border-accent-purple transition-all tracking-tight inline-block mb-8">
+      {person.email}
+    </a>
+    <br />
+    <a href={`mailto:${person.email}`}
+       class="inline-block px-7 py-3 bg-accent-purple text-bg-primary text-xs tracking-widest uppercase font-mono transition hover:opacity-80">
+      Send a message
+    </a>
+  </div>
+</section>
