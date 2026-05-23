@@ -1,0 +1,17 @@
+---
+import { person } from '../data/content';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="px-8 py-6 border-t border-glow flex justify-between items-center text-xs text-text-muted">
+  <span>© {year} {person.name}</span>
+  <div class="flex gap-6">
+    {person.socials.map((s) => (
+      <a href={s.url} target="_blank" rel="noopener noreferrer"
+         class="hover:text-accent-teal transition-colors">
+        {s.label}
+      </a>
+    ))}
+  </div>
+</footer>

@@ -1,0 +1,36 @@
+---
+import { person, stats } from '../data/content';
+
+const accentColors = ['accent-purple', 'accent-teal', 'accent-pink', 'accent-purple'];
+---
+
+<section id="about" class="px-8 py-16 border-t border-glow">
+  <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+
+    <!-- Left: text -->
+    <div>
+      <p class="text-xs tracking-widest uppercase text-accent-purple mb-2">About</p>
+      <h2 class="font-display font-bold text-3xl tracking-tight mb-6 leading-tight">
+        Design leader.<br />Systems thinker.
+      </h2>
+      <div class="space-y-4 text-sm leading-loose text-text-primary/60">
+        {person.about.map((para) => <p>{para}</p>)}
+      </div>
+    </div>
+
+    <!-- Right: stat cards -->
+    <div class="grid grid-cols-2 gap-4">
+      {stats.map((stat, i) => (
+        <div class="relative overflow-hidden p-5 bg-bg-surface border border-glow">
+          <div class="absolute top-0 left-0 w-0.5 h-full"
+               style={`background: ${i % 2 === 0 ? '#7c6fff' : i === 1 ? '#4fd1c5' : '#f0a3ff'}`}></div>
+          <p class="font-display font-extrabold text-4xl text-text-primary leading-none mb-1">
+            {stat.value}
+          </p>
+          <p class="text-xs text-text-muted tracking-wide">{stat.label}</p>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>

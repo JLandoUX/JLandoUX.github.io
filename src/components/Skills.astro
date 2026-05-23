@@ -1,0 +1,23 @@
+---
+import { skills } from '../data/content';
+
+const chipClass: Record<string, string> = {
+  ux:    'border-accent-purple/40 text-accent-purple bg-accent-purple/10',
+  tools: 'border-accent-teal/35 text-accent-teal bg-accent-teal/10',
+  soft:  'border-accent-pink/35 text-accent-pink bg-accent-pink/10',
+};
+---
+
+<section class="px-8 py-16 border-t border-glow bg-bg-surface">
+  <div class="max-w-4xl mx-auto">
+    <p class="text-xs tracking-widest uppercase text-accent-purple mb-2">Expertise</p>
+    <h2 class="font-display font-bold text-3xl tracking-tight mb-8">Skills & tools</h2>
+    <div class="flex flex-wrap gap-2">
+      {skills.map((skill) => (
+        <span class={`text-xs px-3 py-1.5 border tracking-wide ${chipClass[skill.category]}`}>
+          {skill.label}
+        </span>
+      ))}
+    </div>
+  </div>
+</section>
