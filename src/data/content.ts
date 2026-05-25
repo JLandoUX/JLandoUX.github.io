@@ -6,10 +6,10 @@ export const person = {
   name: 'Joshua Landis',
   initials: 'JL',
   role: 'UX Product Design Manager',
-  tagline: 'I lead design teams that craft purposeful digital products — bridging user research, systems thinking, and pixel-perfect execution to build experiences people actually love.',
+  tagline: 'As an experienced UX leader and change manager, I specialize in directing design teams, implementing advanced design systems and AI tools, and serving as a principal stakeholder to streamline product development.',
   about: [
-    'I manage and mentor design teams across the full product lifecycle — from early discovery and user research through to polished, shipped experiences.',
-    'My work sits at the intersection of design craft, product strategy, and cross-functional collaboration. I believe great design is invisible, coherent, and always in service of the person using it.',
+    'Design Leader, UX Researcher, and Product Designer with long and varied experience leading UX teams, supervising designers, and acting as the principal UX stakeholder for the organization.',
+    'Change manager adept at guiding teams through major reorganizations, implementing new design systems, and integrating AI design tools to expedite engineering efforts and create a more seamless design iteration process.',
   ],
   availability: 'Available for new projects',
   email: 'hello@joshualandis.com',
@@ -21,10 +21,10 @@ export const person = {
 };
 
 export const stats = [
-  { value: '8+',  label: 'Years in UX' },
+  { value: '16+',  label: 'Years in UX' },
   { value: '20+', label: 'Products shipped' },
-  { value: '3',   label: 'Design systems built' },
-  { value: '12',  label: 'Designers mentored' },
+  { value: '2',   label: 'Design systems built' },
+  { value: '6',  label: 'Designers mentored' },
 ];
 
 export const skills = [
